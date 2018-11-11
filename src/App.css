@@ -1,0 +1,365 @@
+.App {
+  background-color: #F1F3F4;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* responsive */
+@media (max-width:992px){
+  .left-banner{
+    display:none
+  }
+  .carouselSpan{
+    display:none
+  }
+  .carousel-item{
+    width: 100%;
+    height: 60vw;
+  }
+}
+@media (min-width:992px){
+  .bottom-banner{
+    display:none
+  }
+  .carousel-item{
+    width: 100%;
+    height: 35vw;
+  }
+  .sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+  }
+}
+/* My style */
+a{
+  color:#FFA12A
+}
+a:hover{
+  color:#FFA12A
+}
+.bg404041{
+  background-color: #404041;
+}
+.bg404041 a{
+  color:#FFF
+}
+.padding20{
+  padding: 2rem 3rem 1rem 3rem
+}
+.width100{
+  width: 100%;
+}
+
+/* Main content */
+.attachDiv{
+  padding:1rem 0 1rem 0
+}
+.carousel-control-prev-icon{
+  background-image: url("./images/prev.svg");
+  height: 40px;
+  width: 30px
+}
+.carousel-control-prev{
+  width: unset;
+}
+.carousel-control-next-icon{
+  background-image: url("./images/next.svg");
+  height: 40px;
+  width: 30px
+}
+.carousel-control-next{
+  width: unset;
+}
+.carouselChildren{
+  background: #eeeeee; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+  background: radial-gradient(ellipse at center, #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  /* display: flex; */
+  text-align: center;
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+.carouselChildren img{
+  max-width: 80%;
+  max-height: 70%;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  margin:auto;
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+}
+.carouselSpan{
+  min-height: 14%;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.carouselSpan span{
+  top:0;
+  opacity: 0.7;
+}
+.btn-outline-secondary{
+  background-color:#FFF;
+  border-color:#FFA12A;
+  color:#FFA12A
+}
+.btn-outline-secondary:active{
+  background-color:#FFF;
+  border-color:#FFA12A;
+  color:#FFA12A
+}
+.btn-outline-secondary:hover{
+  background-color:#FFF;
+  border-color:#FFA12A;
+  color:#FFA12A
+}
+.btn-outline-secondary img{
+  height: 20px;
+}
+.dropdown-toggle img{
+  height: 20px;
+}
+.dropdown-menu{
+  min-width: 5rem;
+}
+.dropdown-item:active{
+  background-color:#FFA12A;
+}
+
+/* Left banner */
+.attachImg{
+  height: 1em;
+}
+.left-banner{
+  text-align: center
+}
+.previewDiv{
+  margin:0 auto 1rem auto;
+  width: 50%;
+  height: 6vw;
+  cursor: pointer;
+  padding:.1rem;
+  border:1px solid #CBCBCB
+}
+.arrowImg{
+  height: 0.75rem;
+  opacity: .5;
+  position: absolute;
+  left: 0;
+}
+.arrowDiv{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  text-align: center;
+}
+
+/* Bottom banner */
+.previewDivBottom{
+  float: left;
+  width: 20%;
+}
+.previewImgBottom{
+  margin:0 auto 1rem auto;
+  width: 90%;
+  height: 11vw;
+  cursor: pointer;
+  padding:.1rem;
+  border:1px solid #CBCBCB
+}
+
+.arrowImgBottom{
+  height: 0.75rem;
+  opacity: .5;
+  margin:0 auto 5% auto;
+}
+.arrowDivBottom{
+  height: 1rem;
+  display: flex;
+}
+
+/* Right section */
+.downloadButton{
+  background-color: #FFA12A;
+  width: 100%;
+  border-color: unset;
+  height:60px
+}
+.downloadButton img{
+  height: 20px;
+  margin-right: 10px
+}
+.downloadButton span{
+  font-size: 20px;
+}
+.typeDiv {
+  display: flex;
+  background-color: #E5E6E8;
+  margin-top: 15px;
+  height: auto;
+} 
+.typeDivSpan {
+  margin:auto
+}
+.typeButton{
+  margin: .75rem auto .75rem auto;
+}
+.typeButton button{
+  margin:0 .25rem 0 .25rem;
+  background-color: #FFA12A;
+  border:none;
+}
+.badge-secondary{
+  background-color: #FFA12A;
+  padding: 8px;
+  margin: auto 0 auto 10px;
+}
+.buttonDiv {
+  margin-top: 15px
+}
+.buttonDiv button{
+  width: 100%;
+  height: 45px;
+}
+.licenseDiv {
+  background-color: #FFF;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  position:relative;
+}
+.licenseDiv img{
+  height: 40px;
+}
+.licenseHr{
+  padding:.5rem;
+  border-left: 1px solid #CBCBCB;
+}
+.licenseHr img{
+  height: 20px;
+  margin-right:10px
+}
+.licenseText{
+  margin:auto;
+  width:50%
+}
+.licenseText span{
+  margin-left: 15px
+}
+.breadcrumb{
+  background-color:#FFF;
+  margin-bottom:3rem
+}
+.downloadButtomModal{
+  background-color: #FFA12A;
+  border-color: unset;
+}
+.downloadButtomModal:hover{
+  background-color: #FFA12A;
+  border-color: unset;
+}
+/* Footer */
+footer{
+  background-color: #FFF;
+  color:gray;
+}
+.footer-content {
+  padding: 60px;
+}
+.footer-logo {
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.footer-logo img {
+  vertical-align: bottom;
+}
+.align1 {
+  text-align: center !important;
+}
+.footer-bar01{
+  background:#404041
+}
+.footer-bar01-inner {
+  margin: 0 auto;
+  position: relative;
+}
+.copyright {
+  margin:0;
+  color: #fff;
+  font-size: 12px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 100%;
+}
+.copyright small{
+  font-size: 100%
+}
+
+/* Modal */
+.modal-content{
+  border-radius: .4rem;
+}
+.modal-header{
+  background-color: #404041;
+  color:#FFF;
+}
+.modal-body{
+  text-align:center;
+}
+.imageModal{
+  margin: auto auto 1rem auto;
+  height: 200px;
+  width: 200px;
+}
+.buttonModal button{
+  background-color: #FFA12A;
+  border-color: unset;
+}
+.buttonModal button:hover{
+  background-color: #FFA12A;
+  border-color: unset;
+}
+.close{
+  color:#FFF
+}
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+  color:#FFF
+}
